@@ -62,25 +62,25 @@ void rules()
             system("firefox http://www.wikihow.com/Play-Tic-Tac-Toe");
     }
 }
-bool decision(char *x, char *o, unsigned char *u1)
+bool decision(char *x, char *o, unsigned char *p1)
 {
     char dec;
     printf("\n\n");
     do
     {
-        printf("Player1 %s choose the X or 0:", u1);
+        printf("Player1 %s choose the X or o:", p1);
         dec = getchar();
         scanf("%c", &dec);
     } while (dec != 'X' && dec != 'x' && dec != 'o');
     if (dec == 'x' || dec == "X")
     {
         *x = 'X';
-        *o = 'Y';
+        *o = '0';
     }
     else
     {
         *x = 'Y';
-        *o = 'X';
+        *o = '0';
     }
     return 1;
 };
