@@ -12,6 +12,22 @@
 void rules();
 int main()
 {
+    char x, o;
+    int s;
+    char a[9] = {'1',
+                 '2',
+                 '3',
+                 '4',
+                 '5',
+                 '6',
+                 '7',
+                 '8',
+                 '9'};
+    char p1[10], p2[10];
+
+    rules();
+    printf("\n\nType 1 to start the game:-\nType 2 to view leader board:-\n");
+    scanf('%d', &s)
 }
 void rules()
 {
