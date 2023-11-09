@@ -27,7 +27,21 @@ int main()
 
     rules();
     printf("\n\nType 1 to start the game:-\nType 2 to view leader board:-\n");
-    scanf('%d', &s)
+    scanf('%d', &s);
+    switch (s)
+    {
+
+    case 1:
+        do
+        {
+            printf('\n Enter player 1 name: ');
+            scanf('%s', p1);
+            printf("Enter name of player2: ");
+            scanf("%s", p2);
+            !strcmp(p1, p2) ? printf("Enter names of different players!\n\n") : FALSE;
+        } while (!strcmp(p1, p2));
+        decision(&x, &o, &p1);
+    }
 }
 void rules()
 {
