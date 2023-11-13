@@ -36,7 +36,7 @@ bool decision(char *x, char *o, unsigned char *u1)
     printf("\n\n");
     do
     {
-        printf("Player1 %s choose the X or 0:", u1);
+        printf("Player1 %s chose the X or 0:", u1);
         dec = getchar();
         scanf("%c", &dec);
     } while (dec != 'X' && dec != 'x' && dec != '0');
